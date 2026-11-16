@@ -15,7 +15,7 @@ pipeline {
                   -v jenkins_home:/var/jenkins_home \
                   -w "$WORKSPACE/app" \
                   gradle:8.14.4-jdk17 \
-                  clean bootJar
+                  gradle clean bootJar
                 '''
             }
         }
