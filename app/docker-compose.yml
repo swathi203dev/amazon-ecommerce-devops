@@ -1,0 +1,7 @@
+services:
+  ecommerce:
+    image: amazon-ecommerce:v1
+    container_name: amazon-ecommerce-compose
+    ports:
+      - "8080:8080"
+    restart: unless-stopped

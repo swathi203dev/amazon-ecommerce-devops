@@ -1,0 +1,13 @@
+.gradle/
+**/.gradle/
+**/build/
+*.jar
+*.log
+*.zip
+.env
+.idea/
+.vscode/
+**/target/
+**/build/
+**/.gradle/
+*.zip
