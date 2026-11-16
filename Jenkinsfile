@@ -12,10 +12,10 @@ pipeline {
             steps {
                 sh '''
                 docker run --rm \
-                  -v "$WORKSPACE:/workspace" \
-                  -w /workspace/app \
+                  -v jenkins_home:/var/jenkins_home \
+                  -w "$WORKSPACE/app" \
                   gradle:8.14.4-jdk17 \
-                  gradle clean bootJar
+                  clean bootJar
                 '''
             }
         }
